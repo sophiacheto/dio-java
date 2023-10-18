@@ -12,7 +12,7 @@ public class CatalogoLivros {
         lista.add(new Livro(titulo, autor, anoPublicacao));
     }
 
-    public List pesquisarPorAutor(String autor) {
+    public List<Livro> pesquisarPorAutor(String autor) {
         List <Livro> livros = new ArrayList<>();
 
         for (Livro livro : lista)
@@ -22,7 +22,7 @@ public class CatalogoLivros {
         return livros;
     }
 
-    public List pesquisarPorIntervaloAnos(int anoInicial, int anoFinal) {
+    public List<Livro> pesquisarPorIntervaloAnos(int anoInicial, int anoFinal) {
         List <Livro> livros = new ArrayList<>();
         
         for (Livro livro : lista)
